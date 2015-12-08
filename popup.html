@@ -1,0 +1,89 @@
+<html lang="en">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Lazarus Project">
+        <meta name="author" content="Lazar Muresan">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <title>Lazarus Project</title>
+
+        <link rel="stylesheet" type="text/css" href="vendor/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+	</head>
+	<body>
+        <div class="wrap container">
+            <div>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#bucket" aria-controls="bucket" role="tab" data-toggle="tab">Set bucket</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#about" aria-controls="about" role="tab" data-toggle="tab">About this project</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="bucket">
+                        <label>Set a random bucket ID between:</label>
+                        <table class="table table-hover">
+                            <tbody>
+                                <tr>
+                                    <td><button class="btn btn-info">1-10</button></td>
+                                    <td><button class="btn btn-info">11-20</button></td>
+                                    <td><button class="btn btn-info">21-30</button></td>
+                                    <td><button class="btn btn-info">31-40</button></td>
+                                    <td><button class="btn btn-info">41-50</button></td>
+                                </tr>
+                                <tr>
+                                    <td><button class="btn btn-info">51-60</button></td>
+                                    <td><button class="btn btn-info">61-70</button></td>
+                                    <td><button class="btn btn-info">71-80</button></td>
+                                    <td><button class="btn btn-info">81-90</button></td>
+                                    <td><button class="btn btn-info">91-100</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <label>Set a specific bucket ID</label>
+                        <div class="row">
+                            <input class="form-control col-xs-4" id="specific-bucket-id" type="text" maxlength="3" placeholder="e.g. 21" />
+                            <button type="submit" class="col-xs-offset-2 col-xs-6 btn btn-success">Apply</button>
+                        </div>
+
+                        <div class="automatic-refresh">
+                            <label>
+                                <input type="checkbox" value="true" name="refresh" id="refreshPage" checked="checked">
+                                Refresh the page after the bucket is set
+                            </label>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="about">
+                        <p>The name of the project is <strong>lazarus</strong> or simply <strong>L.</strong></p>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">What's new in version 0.3</h3>
+                            </div>
+                            <div class="panel-body">
+                                <ul>
+                                    <li>New design</li>
+                                    <li>Append the bucket number near the icon (this feature is not fully tested)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        For any suggestions please drop an email to <strong>lazarmuresan@gmail.com</strong> or raise an issue on the project <a href="https://github.com/lmuresan/lazarus-project" target="_blank"><strong>github</strong></a> page.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<!-- scripts -->
+	  	<script src="vendor/jquery/dist/jquery.min.js"></script>
+        <script src="vendor/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+        <script src="app/services/MessageService.js"></script>
+        <script src="app/services/CookieService.js"></script>
+        <script src="app/services/NotificationService.js"></script>
+        <script src="app/controllers/BucketController.js"></script>
+        <script src="app/controllers/config.js"></script>
+	  	<script src="popup.js"></script>
+	</body>
+</html>

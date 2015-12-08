@@ -1,0 +1,23 @@
+# Eclipse project files/folders
+.settings/
+.classpath
+.project
+log.txt
+
+# IntelliJ project files/folders
+*.iml
+*.ipr
+*.iws
+*.bat 
+.idea/
+
+# Target folders
+bin/
+logs/
+target/
+test-output/
+vendor/
+
+# Static bundling
+src/main/resources/static*
+src/main/webapp/static/*

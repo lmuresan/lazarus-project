@@ -1,0 +1,81 @@
+html, body {
+    /*height : 330px;*/
+}
+
+h2 {
+    margin-top   : 0;
+    font-size    : 24px;
+    padding-left : 12px;
+}
+
+section {
+    padding : 12px;
+}
+
+footer {
+    margin-top : 50px;
+    font-size  : 14px;
+    color      : #AAA;
+    text-align : center;
+}
+
+footer a {
+    color           : #888;
+    text-decoration : none;
+}
+
+.wrap {
+    width   : 404px;
+    padding : 0;
+}
+
+.nav-tabs {
+    border-bottom : 0;
+    margin-bottom : 12px;
+}
+
+.nav-tabs > li > a,
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus {
+    border-radius : 0;
+    border        : 0;
+    color         : #222222;
+    margin-right  : 0;
+}
+
+.nav-tabs > li > a:focus,
+.nav-tabs > li > a:hover {
+    background : transparent;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    color            : #fd7115;
+    background-color : #fff;
+    border           : 0;
+    border-bottom    : 1px solid #fd7115;
+}
+
+#bucket,
+#about {
+    padding : 0 8px 8px 8px;
+}
+
+#bucket .row {
+    margin  : 0 0 20px 0;
+    padding : 0 5px;
+}
+
+#bucket .row .form-control {
+    width : 33.3%;
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+    padding : 4px;
+}
