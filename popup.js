@@ -30,6 +30,24 @@
         retrieveBucketID();
     });
 
+    $('#specific-bucket-id').on('keyup', function (event) {
+        var button     = $('#set-specific-bucket-id'),
+            bucketVal  = parseInt($(this).val(), 10),
+            valueToSet = '';
+
+        if (bucketVal && bucketVal <= 100) {
+            valueToSet = bucketVal;
+            button.removeAttr('disabled');
+        } else if (bucketVal > 100) {
+            valueToSet = $(this).val().substring(0, $(this).val().length - 1);
+            button.removeAttr('disabled');
+        } else {
+            button.attr('disabled', 'disabled');
+        }
+
+        $(this.val(valueToSet));
+    });
+
     $('#set-specific-bucket-id').click(function () {
         var bucket = parseInt($('#specific-bucket-id').val(), 10);
         messageService.sendMessage({}, 'POPUP_JS', 'getDocumentDomain', function (response) {

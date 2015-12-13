@@ -47,7 +47,7 @@
                         <label>Set a specific bucket ID</label>
                         <div class="row">
                             <input class="form-control col-xs-4" id="specific-bucket-id" type="text" maxlength="3" placeholder="e.g. 21" />
-                            <button id="set-specific-bucket-id" type="submit" class="col-xs-offset-2 col-xs-6 btn btn-success">Apply</button>
+                            <button id="set-specific-bucket-id" type="submit" class="col-xs-offset-2 col-xs-6 btn btn-success" disabled>Apply</button>
                         </div>
 
                         <div class="automatic-refresh">
@@ -61,10 +61,11 @@
                         <p>The name of the project is <strong>lazarus</strong> or simply <strong>L.</strong></p>
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title">What's new in version 0.3</h3>
+                                <h3 class="panel-title">What's new in version 0.3.2</h3>
                             </div>
                             <div class="panel-body">
                                 <ul>
+                                    <li>Issues: <a href="https://github.com/lmuresan/lazarus-project/issues/1" target="_blank">#1</a>, <a href="https://github.com/lmuresan/lazarus-project/issues/2" target="_blank">#2</a></li>
                                     <li>New design</li>
                                     <li>Append the bucket number near the icon (this feature is not fully tested)</li>
                                 </ul>
@@ -77,7 +78,7 @@
         </div>
 
 		<!-- scripts -->
-	  	<script src="vendor/jquery/dist/jquery.min.js"></script>
+	  	<script src="vendor/jquery/jquery-2.1.4.min.js"></script>
         <script src="vendor/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
         <script src="app/services/MessageService.js"></script>
         <script src="app/services/CookieService.js"></script>
