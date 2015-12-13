@@ -16,7 +16,6 @@ bin/
 logs/
 target/
 test-output/
-vendor/
 
 # Static bundling
 src/main/resources/static*
