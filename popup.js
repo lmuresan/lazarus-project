@@ -39,7 +39,8 @@
             valueToSet = bucketVal;
             button.removeAttr('disabled');
         } else if (bucketVal > 100) {
-            valueToSet = $(this).val().substring(0, $(this).val().length - 1);
+            valueToSet = parseInt($(this).val().substring(0, $(this).val().length - 1), 10);
+            
             button.removeAttr('disabled');
         } else {
             button.attr('disabled', 'disabled');
