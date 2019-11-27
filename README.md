@@ -1,4 +1,4 @@
 # lazarus-project
 
-To install the extension use the following link:
-https://chrome.google.com/webstore/detail/lazarus-project/gfkgcfhnhbhjcolgcjnbedjeoaekemjj
+The new version of the extension (2.0.0)
+https://chrome.google.com/webstore/detail/lazarus-project/comhenchobbhicoeiipmlpgafbkgngac
